@@ -33,12 +33,12 @@ class Sidebar extends Component {
 
     const dropdownPaths = [
       { path: "/apps", state: "appsMenuOpen" },
-      { path: "/basic-ui", state: "basicUiMenuOpen" },
+      { path: "/booking", state: "basicUiMenuOpen" },
       { path: "/advanced-ui", state: "advancedUiMenuOpen" },
       { path: "/form-elements", state: "formElementsMenuOpen" },
       { path: "/tables", state: "tablesMenuOpen" },
       { path: "/maps", state: "mapsMenuOpen" },
-      { path: "/icons", state: "iconsMenuOpen" },
+      { path: "/settings", state: "iconsMenuOpen" },
       { path: "/charts", state: "chartsMenuOpen" },
       { path: "/user-pages", state: "userPagesMenuOpen" },
       { path: "/error-pages", state: "errorPagesMenuOpen" },
@@ -96,7 +96,7 @@ class Sidebar extends Component {
           </li>
           <li
             className={
-              this.isPathActive("/basic-ui") ? "nav-item active" : "nav-item"
+              this.isPathActive("/booking") ? "nav-item active" : "nav-item"
             }
           >
             <div
@@ -120,11 +120,11 @@ class Sidebar extends Component {
                   {" "}
                   <Link
                     className={
-                      this.isPathActive("/basic-ui/buttons")
+                      this.isPathActive("/booking/trips")
                         ? "nav-link active"
                         : "nav-link"
                     }
-                    to="/basic-ui/buttons"
+                    to="/booking/trips"
                   >
                     <Trans>Trips</Trans>
                   </Link>
@@ -133,11 +133,11 @@ class Sidebar extends Component {
                   {" "}
                   <Link
                     className={
-                      this.isPathActive("/basic-ui/dropdowns")
+                      this.isPathActive("/booking/equipments")
                         ? "nav-link active"
                         : "nav-link"
                     }
-                    to="/basic-ui/dropdowns"
+                    to="/booking/equipments"
                   >
                     <Trans>Equipment</Trans>
                   </Link>
@@ -238,7 +238,7 @@ class Sidebar extends Component {
           </li>
           <li
             className={
-              this.isPathActive("/icons") ? "nav-item active" : "nav-item"
+              this.isPathActive("/settings") ? "nav-item active" : "nav-item"
             }
           >
             <div
@@ -260,11 +260,11 @@ class Sidebar extends Component {
                   {" "}
                   <Link
                     className={
-                      this.isPathActive("/icons/mdi")
+                      this.isPathActive("/settings/user")
                         ? "nav-link active"
                         : "nav-link"
                     }
-                    to="/icons/mdi"
+                    to="/settings/user"
                   >
                     <Trans>Users</Trans>
                   </Link>
@@ -273,11 +273,11 @@ class Sidebar extends Component {
                   {" "}
                   <Link
                     className={
-                      this.isPathActive("/icons/mdi")
+                      this.isPathActive("/settings/user")
                         ? "nav-link active"
                         : "nav-link"
                     }
-                    to="/icons/mdi"
+                    to="/settings/user"
                   >
                     <Trans>Equipment</Trans>
                   </Link>
@@ -286,11 +286,11 @@ class Sidebar extends Component {
                   {" "}
                   <Link
                     className={
-                      this.isPathActive("/icons/mdi")
+                      this.isPathActive("/settings/user")
                         ? "nav-link active"
                         : "nav-link"
                     }
-                    to="/icons/mdi"
+                    to="/settings/user"
                   >
                     <Trans>Vehicles</Trans>
                   </Link>
@@ -299,11 +299,11 @@ class Sidebar extends Component {
                   {" "}
                   <Link
                     className={
-                      this.isPathActive("/icons/mdi")
+                      this.isPathActive("/settings/user")
                         ? "nav-link active"
                         : "nav-link"
                     }
-                    to="/icons/mdi"
+                    to="/settings/user"
                   >
                     <Trans>Drivers</Trans>
                   </Link>
@@ -312,11 +312,11 @@ class Sidebar extends Component {
                   {" "}
                   <Link
                     className={
-                      this.isPathActive("/icons/mdi")
+                      this.isPathActive("/settings/organisation")
                         ? "nav-link active"
                         : "nav-link"
                     }
-                    to="/tables/basic-table"
+                    to="/settings/organisation"
                   >
                     <Trans>Organisations</Trans>
                   </Link>
@@ -325,11 +325,11 @@ class Sidebar extends Component {
                   {" "}
                   <Link
                     className={
-                      this.isPathActive("/icons/mdi")
+                      this.isPathActive("/settings/user")
                         ? "nav-link active"
                         : "nav-link"
                     }
-                    to="/icons/mdi"
+                    to="/settings/user"
                   >
                     <Trans>Locations</Trans>
                   </Link>
