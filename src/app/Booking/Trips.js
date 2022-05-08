@@ -1,11 +1,12 @@
 import React, { useState } from "react";
 import Button from "@mui/material/Button";
-import TextField from "@mui/material/TextField";
 import Dialog from "@mui/material/Dialog";
 import DialogActions from "@mui/material/DialogActions";
 import DialogContent from "@mui/material/DialogContent";
-import DialogContentText from "@mui/material/DialogContentText";
 import DialogTitle from "@mui/material/DialogTitle";
+import { Form } from "react-bootstrap";
+import DatePicker from "react-datepicker";
+import bsCustomFileInput from "bs-custom-file-input";
 
 function Trip() {
   const [open, setOpen] = React.useState(false);
@@ -113,21 +114,70 @@ function Trip() {
               </div>
             </div>
             <Dialog open={open} onClose={handleClose}>
-              <DialogTitle>Subscribe</DialogTitle>
+              <DialogTitle>New Trip</DialogTitle>
               <DialogContent>
-                <DialogContentText>
-                  To subscribe to this website, please enter your email address
-                  here. We will send updates occasionally.
-                </DialogContentText>
-                <TextField
-                  autoFocus
-                  margin="dense"
-                  id="name"
-                  label="Email Address"
-                  type="email"
-                  fullWidth
-                  variant="standard"
-                />
+                <form className="forms-sample" style={{ width: "500px" }}>
+                  <Form.Group>
+                    <label htmlFor="exampleInputUsername1">
+                      Select Vehicle
+                    </label>
+                    <Form.Control
+                      type="text"
+                      id="exampleInputUsername1"
+                      placeholder="Username"
+                      size="lg"
+                    />
+                  </Form.Group>
+                  <Form.Group>
+                    <label htmlFor="exampleInputUsername1">
+                      Select Passenger
+                    </label>
+                    <Form.Control
+                      type="text"
+                      id="exampleInputUsername1"
+                      placeholder="Username"
+                      size="lg"
+                    />
+                  </Form.Group>
+                  <Form.Group>
+                    <label htmlFor="exampleInputUsername1">
+                      Pickup location
+                    </label>
+                    <Form.Control
+                      type="text"
+                      id="exampleInputUsername1"
+                      placeholder="Username"
+                      size="lg"
+                    />
+                  </Form.Group>
+                  <Form.Group>
+                    <label htmlFor="exampleInputUsername1">Destination</label>
+                    <Form.Control
+                      type="text"
+                      id="exampleInputUsername1"
+                      placeholder="Username"
+                      size="lg"
+                    />
+                  </Form.Group>
+                  <Form.Group>
+                    <label htmlFor="exampleInputUsername1">Reason</label>
+                    <Form.Control
+                      type="text"
+                      id="exampleInputUsername1"
+                      placeholder="Username"
+                      size="lg"
+                    />
+                  </Form.Group>
+                  <Form.Group>
+                    <label htmlFor="exampleInputUsername1">Driver</label>
+                    <Form.Control
+                      type="text"
+                      id="exampleInputUsername1"
+                      placeholder="Username"
+                      size="lg"
+                    />
+                  </Form.Group>
+                </form>
               </DialogContent>
               <DialogActions>
                 <Button onClick={handleClose}>Cancel</Button>
